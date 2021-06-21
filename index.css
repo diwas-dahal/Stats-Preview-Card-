@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  padding: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.container {
+  background-color: hsl(244, 38%, 16%);
+  min-width: 90%;
+  min-height: 700px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.row1 {
+  width: 100%;
+  min-height: 200px;
+  background-color: hsl(277, 64%, 61%);
+  background-image: url("images/image-header-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+.row2 {
+  width: 100%;
+  min-height: 500px;
+  padding: 0px 20px;
+  text-align: center;
+  color: white;
+}
+
+.heading {
+  min-height: 200px;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 20px 0px;
+}
+
+.heading p {
+  color: rgb(197, 188, 188);
+  letter-spacing: 1px;
+}
+
+.stats {
+  margin-top: 10px;
+}
+
+.stat-data {
+  margin-bottom: 10px;
+}
+
+.stat-data h1 {
+  margin-bottom: 5px;
+}
+
+.heading span {
+  color: hsl(277, 64%, 61%);
+}
+
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .container {
+    min-width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: fit-content;
+  }
+
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .heading {
+    min-height: fit-content;
+    padding: 0px 10px;
+  }
+
+  .heading h1 {
+    font-size: 2.3rem;
+  }
+
+  .heading p {
+    font-size: 1.2rem;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+}
